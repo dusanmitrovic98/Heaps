@@ -22,7 +22,10 @@ public class Heap<T> where T : IComparable<T>
         this._items.Add(item);
         int currentIndex = this._items.Count - 1;
 
-        // todo finish
+        while (currentIndex > 0 && this._items[currentIndex].CompareTo(this._items[ParentIndex(currentIndex)]) < 0)
+        {
+
+        }
     }
 
     private void Swap(int indexA, int indexB)
