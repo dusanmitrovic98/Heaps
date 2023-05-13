@@ -9,6 +9,6 @@ public class Heap<T> where T : IComparable<T>
 
     public Heap()
     {
-
+        this._items = new List<T>();
     }
 }
