@@ -1,6 +1,6 @@
 ﻿namespace DataStructures.Collections.Heaps;
 
-public class Heap
+public class Heap<T>
 {
 
 }
