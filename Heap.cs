@@ -41,4 +41,9 @@ public class Heap<T> where T : IComparable<T>
     {
         return 2 * index + 1;
     }
+
+    private int RightChildIndex(int index)
+    {
+        return 2 * index + 2;
+    }
 }
