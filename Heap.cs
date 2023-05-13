@@ -16,4 +16,9 @@ public class Heap<T> where T : IComparable<T>
     {
         get { return this._items.Count; }
     }
+
+    public void Add(T item)
+    {
+
+    }
 }
