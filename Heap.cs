@@ -11,4 +11,9 @@ public class Heap<T> where T : IComparable<T>
     {
         this._items = new List<T>();
     }
+
+    public int Count
+    {
+
+    }
 }
