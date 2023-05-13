@@ -3,7 +3,7 @@ using System;
 
 namespace DataStructures.Collections.Heaps;
 
-public class Heap<T>
+public class Heap<T> where T : IComparable<T>
 {
 
 }
