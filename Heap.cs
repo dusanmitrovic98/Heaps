@@ -36,4 +36,9 @@ public class Heap<T> where T : IComparable<T>
     {
         return (index - 1) / 2;
     }
+
+    private int LeftChildIndex(int index)
+    {
+        return 2 * index + 1;
+    }
 }
