@@ -1,4 +1,6 @@
-﻿namespace DataStructures.Collections.Heaps;
+﻿using System.Collections.Generic;
+
+namespace DataStructures.Collections.Heaps;
 
 public class Heap<T>
 {
