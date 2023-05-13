@@ -51,4 +51,9 @@ public class Heap<T> where T : IComparable<T>
     {
         return LeftChildIndex(index) < Count;
     }
+
+    private bool HasRightChild(int index)
+    {
+        return RightChildIndex(index) < Count;
+    }
 }
