@@ -1,4 +1,4 @@
-﻿namespace Heaps;
+﻿namespace DataStructures.Collections.Heaps;
 
 public class Heap
 {
