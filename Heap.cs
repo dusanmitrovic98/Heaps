@@ -27,6 +27,6 @@ public class Heap<T> where T : IComparable<T>
 
     private void Swap(int indexA, int indexB)
     {
-
+        T temp = this._items[indexA];
     }
 }
