@@ -31,4 +31,9 @@ public class Heap<T> where T : IComparable<T>
         this._items[indexA] = this._items[indexB];
         this._items[indexB] = temp;
     }
+
+    private int ParentIndex(int index)
+    {
+        return (index - 1) / 2;
+    }
 }
