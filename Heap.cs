@@ -24,4 +24,9 @@ public class Heap<T> where T : IComparable<T>
 
         // todo finish
     }
+
+    private void Swap(int indexA, int indexB)
+    {
+
+    }
 }
