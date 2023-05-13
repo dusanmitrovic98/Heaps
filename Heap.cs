@@ -21,5 +21,7 @@ public class Heap<T> where T : IComparable<T>
     {
         this._items.Add(item);
         int currentIndex = this._items.Count - 1;
+
+        // todo finish
     }
 }
