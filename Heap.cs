@@ -29,5 +29,6 @@ public class Heap<T> where T : IComparable<T>
     {
         T temp = this._items[indexA];
         this._items[indexA] = this._items[indexB];
+        this._items[indexB] = temp;
     }
 }
