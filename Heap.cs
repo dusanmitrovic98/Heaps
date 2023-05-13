@@ -25,6 +25,7 @@ public class Heap<T> where T : IComparable<T>
         while (currentIndex > 0 && this._items[currentIndex].CompareTo(this._items[ParentIndex(currentIndex)]) < 0)
         {
             Swap(currentIndex, ParentIndex(currentIndex));
+            currentIndex = ParentIndex(currentIndex);
         }
     }
 
