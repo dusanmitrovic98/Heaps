@@ -14,6 +14,6 @@ public class Heap<T> where T : IComparable<T>
 
     public int Count
     {
-
+        get { return this._items.Count; }
     }
 }
