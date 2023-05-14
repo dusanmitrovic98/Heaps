@@ -29,6 +29,38 @@ public class Heap<T> where T : IComparable<T>
         }
     }
 
+    public T RemoveMin()
+    {
+        if (Count == 0)
+        {
+            throw new InvalidOperationException("Heap is empty");
+        }
+
+        T min = this._items[0];
+        this._items[0] = this._items[Count - 1];
+        this._items.RemoveAt(Count - 1);
+
+        int currentIndex = 0;
+        while (HasLeftChild(currentIndex))
+        {
+            int smallerChildIndex = LeftChildIndex(currentIndex);
+            if (HasRightChild(currentIndex) && this._items[RightChildIndex(currentIndex)].CompareTo(this._items[smallerChildIndex]) < 0)
+            {
+                smallerChildIndex = RightChildIndex(currentIndex);
+            }
+
+            if (this._items[currentIndex].CompareTo(this._items[smallerChildIndex]) < 0)
+            {
+                break;
+            }
+
+            Swap(currentIndex, smallerChildIndex);
+            currentIndex = smallerChildIndex;
+        }
+
+        return min;
+    }
+
     private void Swap(int indexA, int indexB)
     {
         T temp = this._items[indexA];
